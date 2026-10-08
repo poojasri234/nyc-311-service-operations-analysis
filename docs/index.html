@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Operational analysis of an NYC 311 service-request snapshot, including data-quality checks, service-time patterns, and an illustrative recorded elapsed-time scenario." />
+    <title>NYC 311 Service Operations Analysis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to analysis</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top">NYC 311 · Service Operations</a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#operations">Operations</a>
+          <a href="#scenario">Scenario</a>
+          <a href="#methods">Methods</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell" tabindex="-1">
+      <section id="top" class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Portfolio case study · Operational analytics</p>
+          <h1 id="page-title">NYC 311 Service Operations Analysis</h1>
+          <p class="lead">A reproducible review of one day of NYC 311 service requests, designed to separate volume, service timing, and data quality before making an operational recommendation.</p>
+        </div>
+        <aside class="source-card" aria-label="Dataset scope">
+          <p><span class="meta-label">Snapshot:</span> <span id="source-scope">Loading scope…</span></p>
+          <p><span class="meta-label">Published by:</span> NYC Open Data</p>
+          <p><a id="dataset-link" href="#" target="_blank" rel="noreferrer">Open the source dataset</a></p>
+        </aside>
+      </section>
+
+      <section id="overview" class="section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">At a glance</p>
+            <h2 id="overview-title">Snapshot health</h2>
+          </div>
+          <p class="mini-note">All figures are descriptive for this extracted snapshot.</p>
+        </div>
+        <div id="kpi-grid" class="kpi-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section" aria-labelledby="decision-title">
+        <div class="decision-card">
+          <p class="eyebrow">Decision brief</p>
+          <h2 id="decision-title">Prioritise a measured high-volume service-time review.</h2>
+          <p id="decision-copy">Loading the decision context…</p>
+        </div>
+      </section>
+
+      <section id="operations" class="section" aria-labelledby="operations-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Operational pulse</p>
+            <h2 id="operations-title">Demand and elapsed resolution time</h2>
+          </div>
+          <p class="mini-note">Elapsed time is from created to closed timestamps.</p>
+        </div>
+        <div class="content-grid">
+          <article class="panel" aria-labelledby="volume-title">
+            <div class="panel-header">
+              <h3 id="volume-title">Highest-volume complaint types</h3>
+              <p>Bars show request count; hover or tab to each bar for its value.</p>
+            </div>
+            <div id="volume-bars" class="bar-list" aria-label="Highest-volume complaint types"></div>
+          </article>
+          <article class="panel" aria-labelledby="agency-title">
+            <div class="panel-header">
+              <h3 id="agency-title">Agency snapshot</h3>
+              <p>Service times should be interpreted within each agency’s operating context.</p>
+            </div>
+            <div class="table-wrap">
+              <table id="agency-table">
+                <caption>Agencies by request volume</caption>
+                <thead><tr><th>Agency</th><th class="numeric">Requests</th><th class="numeric">Close timestamp rate</th><th class="numeric">Median hours</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="timing-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Service-time detail</p>
+            <h2 id="timing-title">Volume needs context from the time distribution</h2>
+          </div>
+          <p class="mini-note">Median and 90th percentile use resolved requests only.</p>
+        </div>
+        <article class="panel">
+          <div class="table-wrap">
+            <table id="complaint-table">
+              <caption>Most requested complaint types, with closure and elapsed-time indicators</caption>
+              <thead><tr><th>Complaint type</th><th class="numeric">Requests</th><th class="numeric">Close timestamp rate</th><th class="numeric">Median hours</th><th class="numeric">P90 hours</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section id="scenario" class="section" aria-labelledby="scenario-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Illustrative scenario</p>
+            <h2 id="scenario-title">Recorded elapsed-time scenario</h2>
+          </div>
+          <p class="mini-note">An operational planning calculation, not an impact claim.</p>
+        </div>
+        <article class="focus-card">
+          <h3 id="focus-name">Selected focus category</h3>
+          <p id="focus-rule" class="section-description">Loading selection rule…</p>
+          <div id="focus-grid" class="focus-grid"></div>
+          <div class="scenario-control">
+            <label for="reduction-slider"><strong>Target reduction in recorded elapsed time</strong></label>
+            <div class="slider-row">
+              <input id="reduction-slider" type="range" min="0" max="25" value="10" step="1" aria-describedby="scenario-caveat" />
+              <output id="reduction-value" class="slider-value" for="reduction-slider">10%</output>
+            </div>
+          </div>
+          <div class="scenario-result" aria-live="polite">
+            <span>Illustrative recorded elapsed-hours reduction</span>
+            <output id="scenario-result">—</output>
+            <p id="scenario-formula">Loading formula…</p>
+          </div>
+          <p id="scenario-caveat" class="caveat">This calculation uses the sum of recorded created-to-closed elapsed time. It does not estimate staff hours saved, cost savings, service benefit, or a causal outcome.</p>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="watchlist-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2 id="watchlist-title">Longer elapsed-time categories deserve a separate root-cause review</h2>
+          </div>
+          <p class="mini-note">Categories are shown for investigation, not ranked by priority alone.</p>
+        </div>
+        <div class="content-grid">
+          <article class="panel" aria-labelledby="slow-title">
+            <div class="panel-header"><h3 id="slow-title">Longest median elapsed time</h3><p>Among categories with at least 100 requests and 50 close timestamps.</p></div>
+            <div class="table-wrap">
+              <table id="slow-table">
+                <caption>Comparable categories with high median elapsed resolution time</caption>
+                <thead><tr><th>Complaint type</th><th class="numeric">Requests</th><th class="numeric">Median hours</th><th class="numeric">P90 hours</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </article>
+          <article class="panel" aria-labelledby="borough-title">
+            <div class="panel-header"><h3 id="borough-title">Borough snapshot</h3><p>Not adjusted for service type, severity, or agency ownership.</p></div>
+            <div class="table-wrap">
+              <table id="borough-table">
+                <caption>Requests and elapsed time by borough</caption>
+                <thead><tr><th>Borough</th><th class="numeric">Requests</th><th class="numeric">Close timestamp rate</th><th class="numeric">Median hours</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="quality-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Data quality</p>
+            <h2 id="quality-title">Checks completed before reporting</h2>
+          </div>
+          <p class="mini-note">A clean result is still documented as a test, not assumed.</p>
+        </div>
+        <article class="panel">
+          <div class="dq-grid">
+            <div class="dq-score"><strong id="valid-rate">—</strong><span>valid row rate after timestamp and identifier checks</span></div>
+            <ul id="dq-list" class="check-list" aria-label="Data quality checks"></ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="methods" class="section" aria-labelledby="methods-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reproducibility</p>
+            <h2 id="methods-title">Source, SQL, and build steps</h2>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a id="source-card-link" class="resource-card" href="#" target="_blank" rel="noreferrer">
+            <span class="resource-kicker">Official source</span><strong>NYC Open Data dataset</strong><p>Public 311 service-request data and dataset documentation.</p>
+          </a>
+          <a class="resource-card" href="https://github.com/poojasri234/nyc-311-service-operations-analysis/tree/main/sql" target="_blank" rel="noreferrer">
+            <span class="resource-kicker">SQL</span><strong>Cleaning and analysis queries</strong><p>Schema, validation checks, operational summary, and data-quality controls.</p>
+          </a>
+          <a class="resource-card" href="https://github.com/poojasri234/nyc-311-service-operations-analysis/blob/main/src/build_project.py" target="_blank" rel="noreferrer">
+            <span class="resource-kicker">Build</span><strong>Reproduce the analysis</strong><p>Python build script creates the local SQLite analysis layer and dashboard data.</p>
+          </a>
+        </div>
+        <p id="hash-note" class="method-note">Raw snapshot fingerprint: loading…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-inner"><p>Portfolio case study. Metrics describe a single public-data snapshot; they are not service-level targets or causal estimates.</p></div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

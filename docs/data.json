@@ -1,0 +1,475 @@
+{
+  "project": "NYC 311 Service Operations Analysis",
+  "source": {
+    "name": "NYC Open Data \u2014 311 Service Requests from 2010 to Present",
+    "dataset_url": "https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/about_data",
+    "api_endpoint": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+    "scope": "All records created on 2025-01-02, queried by created_date with selected operational fields.",
+    "raw_snapshot_sha256": "e92b487d84031dafb2ecfe56a483e3ab620204e93968074c40ed3655b256fb3a",
+    "local_snapshot_file_timestamp_utc": "2026-10-08T06:27:29Z"
+  },
+  "metrics": {
+    "records_profiled": 13811,
+    "valid_row_rate_percent": 100.0,
+    "closed_requests": 13700,
+    "closure_rate_percent": 99.2,
+    "median_resolution_hours": 10.52,
+    "p90_resolution_hours": 332.87,
+    "top_complaint_type": {
+      "label": "Noise - Residential",
+      "requests": 4945,
+      "resolved_requests": 4945,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 33552.31,
+      "median_resolution_hours": 5.45,
+      "p90_resolution_hours": 14.21
+    },
+    "watchlist_category": {
+      "label": "HEAT/HOT WATER",
+      "requests": 1704,
+      "resolved_requests": 1704,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 53929.88,
+      "median_resolution_hours": 29.03,
+      "p90_resolution_hours": 54.03
+    }
+  },
+  "data_quality": {
+    "raw_records": 13811,
+    "retained_records": 13811,
+    "valid_row_rate_percent": 100.0,
+    "duplicate_unique_keys_removed": 0,
+    "records_missing_unique_key": 0,
+    "records_with_invalid_created_timestamp": 0,
+    "records_with_invalid_close_before_create": 0,
+    "records_missing_borough": 0,
+    "records_missing_agency": 0,
+    "records_missing_complaint_type": 0,
+    "records_missing_closed_date": 111
+  },
+  "recommendation_scenario": {
+    "category": "HEAT/HOT WATER",
+    "selection_rule": "Highest median elapsed resolution time among complaint types with at least 1,000 requests and 500 resolved requests in this snapshot.",
+    "resolved_requests": 1704,
+    "recorded_elapsed_hours": 53929.88,
+    "assumption": "A 10% reduction in the sum of recorded created-to-closed elapsed hours for resolved requests in the selected high-volume category.",
+    "illustrative_elapsed_hours_reduced": 5392.99,
+    "interpretation": "Illustrative reduction in recorded elapsed time, not staff-hours saved, a realised service gain, or a causal forecast."
+  },
+  "top_complaint_types": [
+    {
+      "label": "Noise - Residential",
+      "requests": 4945,
+      "resolved_requests": 4945,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 33552.31,
+      "median_resolution_hours": 5.45,
+      "p90_resolution_hours": 14.21
+    },
+    {
+      "label": "HEAT/HOT WATER",
+      "requests": 1704,
+      "resolved_requests": 1704,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 53929.88,
+      "median_resolution_hours": 29.03,
+      "p90_resolution_hours": 54.03
+    },
+    {
+      "label": "Illegal Parking",
+      "requests": 1474,
+      "resolved_requests": 1474,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 5526.24,
+      "median_resolution_hours": 1.71,
+      "p90_resolution_hours": 8.49
+    },
+    {
+      "label": "Blocked Driveway",
+      "requests": 447,
+      "resolved_requests": 447,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 2097.3,
+      "median_resolution_hours": 1.92,
+      "p90_resolution_hours": 9.98
+    },
+    {
+      "label": "UNSANITARY CONDITION",
+      "requests": 352,
+      "resolved_requests": 351,
+      "closure_rate_percent": 99.72,
+      "total_elapsed_resolution_hours": 249808.78,
+      "median_resolution_hours": 381.87,
+      "p90_resolution_hours": 1763.83
+    },
+    {
+      "label": "PLUMBING",
+      "requests": 259,
+      "resolved_requests": 259,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 181352.32,
+      "median_resolution_hours": 209.56,
+      "p90_resolution_hours": 1773.4
+    },
+    {
+      "label": "Street Condition",
+      "requests": 240,
+      "resolved_requests": 233,
+      "closure_rate_percent": 97.08,
+      "total_elapsed_resolution_hours": 9402.66,
+      "median_resolution_hours": 23.52,
+      "p90_resolution_hours": 95.17
+    },
+    {
+      "label": "Abandoned Vehicle",
+      "requests": 214,
+      "resolved_requests": 214,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 1197.21,
+      "median_resolution_hours": 1.48,
+      "p90_resolution_hours": 10.97
+    },
+    {
+      "label": "PAINT/PLASTER",
+      "requests": 194,
+      "resolved_requests": 194,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 142343.27,
+      "median_resolution_hours": 317.19,
+      "p90_resolution_hours": 1792.99
+    },
+    {
+      "label": "Water System",
+      "requests": 184,
+      "resolved_requests": 178,
+      "closure_rate_percent": 96.74,
+      "total_elapsed_resolution_hours": 36485.08,
+      "median_resolution_hours": 4.94,
+      "p90_resolution_hours": 453.38
+    },
+    {
+      "label": "DOOR/WINDOW",
+      "requests": 174,
+      "resolved_requests": 174,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 177659.48,
+      "median_resolution_hours": 398.54,
+      "p90_resolution_hours": 2732.23
+    },
+    {
+      "label": "Dirty Condition",
+      "requests": 158,
+      "resolved_requests": 158,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 5012.04,
+      "median_resolution_hours": 20.43,
+      "p90_resolution_hours": 87.53
+    }
+  ],
+  "slowest_comparable_complaint_types": [
+    {
+      "label": "Noise - Helicopter",
+      "requests": 129,
+      "resolved_requests": 129,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 430159.16,
+      "median_resolution_hours": 3333.48,
+      "p90_resolution_hours": 3339.27
+    },
+    {
+      "label": "DOOR/WINDOW",
+      "requests": 174,
+      "resolved_requests": 174,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 177659.48,
+      "median_resolution_hours": 398.54,
+      "p90_resolution_hours": 2732.23
+    },
+    {
+      "label": "UNSANITARY CONDITION",
+      "requests": 352,
+      "resolved_requests": 351,
+      "closure_rate_percent": 99.72,
+      "total_elapsed_resolution_hours": 249808.78,
+      "median_resolution_hours": 381.87,
+      "p90_resolution_hours": 1763.83
+    },
+    {
+      "label": "PAINT/PLASTER",
+      "requests": 194,
+      "resolved_requests": 194,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 142343.27,
+      "median_resolution_hours": 317.19,
+      "p90_resolution_hours": 1792.99
+    },
+    {
+      "label": "WATER LEAK",
+      "requests": 106,
+      "resolved_requests": 106,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 69745.27,
+      "median_resolution_hours": 267.15,
+      "p90_resolution_hours": 1975.28
+    },
+    {
+      "label": "PLUMBING",
+      "requests": 259,
+      "resolved_requests": 259,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 181352.32,
+      "median_resolution_hours": 209.56,
+      "p90_resolution_hours": 1773.4
+    },
+    {
+      "label": "Illegal Dumping",
+      "requests": 134,
+      "resolved_requests": 133,
+      "closure_rate_percent": 99.25,
+      "total_elapsed_resolution_hours": 12044.82,
+      "median_resolution_hours": 47.43,
+      "p90_resolution_hours": 254.39
+    },
+    {
+      "label": "HEAT/HOT WATER",
+      "requests": 1704,
+      "resolved_requests": 1704,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 53929.88,
+      "median_resolution_hours": 29.03,
+      "p90_resolution_hours": 54.03
+    },
+    {
+      "label": "Noise",
+      "requests": 129,
+      "resolved_requests": 129,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 8644.47,
+      "median_resolution_hours": 24.42,
+      "p90_resolution_hours": 145.9
+    },
+    {
+      "label": "Street Condition",
+      "requests": 240,
+      "resolved_requests": 233,
+      "closure_rate_percent": 97.08,
+      "total_elapsed_resolution_hours": 9402.66,
+      "median_resolution_hours": 23.52,
+      "p90_resolution_hours": 95.17
+    }
+  ],
+  "agency_summary": [
+    {
+      "label": "NYPD",
+      "requests": 7581,
+      "resolved_requests": 7581,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 43623.61,
+      "median_resolution_hours": 3.57,
+      "p90_resolution_hours": 13.67
+    },
+    {
+      "label": "HPD",
+      "requests": 3186,
+      "resolved_requests": 3185,
+      "closure_rate_percent": 99.97,
+      "total_elapsed_resolution_hours": 1251558.39,
+      "median_resolution_hours": 49.14,
+      "p90_resolution_hours": 1255.41
+    },
+    {
+      "label": "DSNY",
+      "requests": 811,
+      "resolved_requests": 806,
+      "closure_rate_percent": 99.38,
+      "total_elapsed_resolution_hours": 115121.87,
+      "median_resolution_hours": 25.97,
+      "p90_resolution_hours": 386.77
+    },
+    {
+      "label": "DOT",
+      "requests": 659,
+      "resolved_requests": 644,
+      "closure_rate_percent": 97.72,
+      "total_elapsed_resolution_hours": 125428.09,
+      "median_resolution_hours": 41.05,
+      "p90_resolution_hours": 243.06
+    },
+    {
+      "label": "DEP",
+      "requests": 517,
+      "resolved_requests": 508,
+      "closure_rate_percent": 98.26,
+      "total_elapsed_resolution_hours": 55454.93,
+      "median_resolution_hours": 21.21,
+      "p90_resolution_hours": 141.19
+    },
+    {
+      "label": "DOB",
+      "requests": 266,
+      "resolved_requests": 266,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 331827.82,
+      "median_resolution_hours": 85.0,
+      "p90_resolution_hours": 3867.98
+    },
+    {
+      "label": "DOHMH",
+      "requests": 210,
+      "resolved_requests": 193,
+      "closure_rate_percent": 91.9,
+      "total_elapsed_resolution_hours": 69759.02,
+      "median_resolution_hours": 27.01,
+      "p90_resolution_hours": 1440.22
+    },
+    {
+      "label": "DPR",
+      "requests": 209,
+      "resolved_requests": 174,
+      "closure_rate_percent": 83.25,
+      "total_elapsed_resolution_hours": 192258.78,
+      "median_resolution_hours": 144.75,
+      "p90_resolution_hours": 3655.3
+    },
+    {
+      "label": "EDC",
+      "requests": 129,
+      "resolved_requests": 129,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 430159.16,
+      "median_resolution_hours": 3333.48,
+      "p90_resolution_hours": 3339.27
+    },
+    {
+      "label": "TLC",
+      "requests": 114,
+      "resolved_requests": 112,
+      "closure_rate_percent": 98.25,
+      "total_elapsed_resolution_hours": 174265.42,
+      "median_resolution_hours": 1782.55,
+      "p90_resolution_hours": 2791.17
+    },
+    {
+      "label": "DHS",
+      "requests": 73,
+      "resolved_requests": 46,
+      "closure_rate_percent": 63.01,
+      "total_elapsed_resolution_hours": 29244.26,
+      "median_resolution_hours": 7.81,
+      "p90_resolution_hours": 2634.0
+    },
+    {
+      "label": "DCWP",
+      "requests": 51,
+      "resolved_requests": 51,
+      "closure_rate_percent": 100.0,
+      "total_elapsed_resolution_hours": 17676.19,
+      "median_resolution_hours": 108.12,
+      "p90_resolution_hours": 738.05
+    }
+  ],
+  "borough_summary": [
+    {
+      "label": "BRONX",
+      "requests": 6349,
+      "resolved_requests": 6330,
+      "closure_rate_percent": 99.7,
+      "total_elapsed_resolution_hours": 571668.0,
+      "median_resolution_hours": 9.42,
+      "p90_resolution_hours": 56.03
+    },
+    {
+      "label": "BROOKLYN",
+      "requests": 3023,
+      "resolved_requests": 2994,
+      "closure_rate_percent": 99.04,
+      "total_elapsed_resolution_hours": 727515.07,
+      "median_resolution_hours": 14.09,
+      "p90_resolution_hours": 597.5
+    },
+    {
+      "label": "QUEENS",
+      "requests": 2164,
+      "resolved_requests": 2139,
+      "closure_rate_percent": 98.84,
+      "total_elapsed_resolution_hours": 570323.85,
+      "median_resolution_hours": 10.32,
+      "p90_resolution_hours": 503.88
+    },
+    {
+      "label": "MANHATTAN",
+      "requests": 1968,
+      "resolved_requests": 1940,
+      "closure_rate_percent": 98.58,
+      "total_elapsed_resolution_hours": 887628.6,
+      "median_resolution_hours": 25.93,
+      "p90_resolution_hours": 1780.17
+    },
+    {
+      "label": "STATEN ISLAND",
+      "requests": 303,
+      "resolved_requests": 294,
+      "closure_rate_percent": 97.03,
+      "total_elapsed_resolution_hours": 83366.3,
+      "median_resolution_hours": 12.93,
+      "p90_resolution_hours": 284.69
+    },
+    {
+      "label": "Unspecified",
+      "requests": 4,
+      "resolved_requests": 3,
+      "closure_rate_percent": 75.0,
+      "total_elapsed_resolution_hours": 944.98,
+      "median_resolution_hours": 200.59,
+      "p90_resolution_hours": 541.32
+    }
+  ],
+  "status_summary": [
+    {
+      "label": "Closed",
+      "requests": 13711
+    },
+    {
+      "label": "In Progress",
+      "requests": 58
+    },
+    {
+      "label": "Assigned",
+      "requests": 11
+    },
+    {
+      "label": "Unspecified",
+      "requests": 11
+    },
+    {
+      "label": "Open",
+      "requests": 7
+    },
+    {
+      "label": "Pending",
+      "requests": 7
+    },
+    {
+      "label": "Started",
+      "requests": 6
+    }
+  ],
+  "channel_summary": [
+    {
+      "label": "MOBILE",
+      "requests": 5959
+    },
+    {
+      "label": "ONLINE",
+      "requests": 4007
+    },
+    {
+      "label": "PHONE",
+      "requests": 3047
+    },
+    {
+      "label": "UNKNOWN",
+      "requests": 798
+    }
+  ]
+}
