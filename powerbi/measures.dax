@@ -1,0 +1,49 @@
+-- Table name assumed after import: '311 Operational Summary'
+-- Group-level medians and P90s in the CSV must not be summed or averaged
+-- to represent a global percentile.
+
+Total Requests =
+SUM ( '311 Operational Summary'[requests] )
+
+Resolved Requests =
+SUM ( '311 Operational Summary'[resolved_requests] )
+
+Requests Without Close Timestamp =
+[Total Requests] - [Resolved Requests]
+
+Closure Rate % =
+DIVIDE ( [Resolved Requests], [Total Requests] )
+
+Selected Group Median Resolution Hours =
+IF (
+    HASONEVALUE ( '311 Operational Summary'[dimension] )
+        && HASONEVALUE ( '311 Operational Summary'[label] ),
+    MAX ( '311 Operational Summary'[median_resolution_hours] ),
+    BLANK ()
+)
+
+Selected Group P90 Resolution Hours =
+IF (
+    HASONEVALUE ( '311 Operational Summary'[dimension] )
+        && HASONEVALUE ( '311 Operational Summary'[label] ),
+    MAX ( '311 Operational Summary'[p90_resolution_hours] ),
+    BLANK ()
+)
+
+Selected Group Total Recorded Elapsed Hours =
+IF (
+    HASONEVALUE ( '311 Operational Summary'[dimension] )
+        && HASONEVALUE ( '311 Operational Summary'[label] ),
+    MAX ( '311 Operational Summary'[total_elapsed_resolution_hours] ),
+    BLANK ()
+)
+
+-- This applies only when HEAT/HOT WATER is selected.
+-- It is an illustrative recorded-elapsed-time scenario, not a cost or savings measure.
+Illustrative 10% Recorded Elapsed-Hours Scenario =
+IF (
+    SELECTEDVALUE ( '311 Operational Summary'[dimension] ) = "complaint_type"
+        && SELECTEDVALUE ( '311 Operational Summary'[label] ) = "HEAT/HOT WATER",
+    [Selected Group Total Recorded Elapsed Hours] * 0.10,
+    BLANK ()
+)
