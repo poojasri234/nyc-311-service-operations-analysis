@@ -1,0 +1,4 @@
+data/raw/*.json
+outputs/*.sqlite
+__pycache__/
+*.pyc
