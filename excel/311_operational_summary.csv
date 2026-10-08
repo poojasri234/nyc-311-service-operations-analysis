@@ -1,0 +1,148 @@
+dimension,label,requests,resolved_requests,closure_rate_percent,total_elapsed_resolution_hours,median_resolution_hours,p90_resolution_hours
+complaint_type,Noise - Residential,4945,4945,100.0,33552.31,5.45,14.21
+complaint_type,HEAT/HOT WATER,1704,1704,100.0,53929.88,29.03,54.03
+complaint_type,Illegal Parking,1474,1474,100.0,5526.24,1.71,8.49
+complaint_type,Blocked Driveway,447,447,100.0,2097.3,1.92,9.98
+complaint_type,UNSANITARY CONDITION,352,351,99.72,249808.78,381.87,1763.83
+complaint_type,PLUMBING,259,259,100.0,181352.32,209.56,1773.4
+complaint_type,Street Condition,240,233,97.08,9402.66,23.52,95.17
+complaint_type,Abandoned Vehicle,214,214,100.0,1197.21,1.48,10.97
+complaint_type,PAINT/PLASTER,194,194,100.0,142343.27,317.19,1792.99
+complaint_type,Water System,184,178,96.74,36485.08,4.94,453.38
+complaint_type,DOOR/WINDOW,174,174,100.0,177659.48,398.54,2732.23
+complaint_type,Dirty Condition,158,158,100.0,5012.04,20.43,87.53
+complaint_type,Derelict Vehicles,150,150,100.0,4073.47,17.53,84.89
+complaint_type,Illegal Dumping,134,133,99.25,12044.82,47.43,254.39
+complaint_type,Noise,129,129,100.0,8644.47,24.42,145.9
+complaint_type,Noise - Helicopter,129,129,100.0,430159.16,3333.48,3339.27
+complaint_type,Noise - Street/Sidewalk,121,121,100.0,298.91,1.08,6.11
+complaint_type,Traffic Signal Condition,117,117,100.0,10092.8,8.9,150.91
+complaint_type,Encampment,115,115,100.0,29418.11,2.21,299.95
+complaint_type,WATER LEAK,106,106,100.0,69745.27,267.15,1975.28
+complaint_type,Noise - Commercial,99,99,100.0,165.65,0.71,4.33
+complaint_type,Street Light Condition,96,88,91.67,47248.78,187.98,1513.4
+complaint_type,GENERAL,95,95,100.0,98413.79,397.25,2871.45
+complaint_type,Graffiti,95,94,98.95,76266.21,840.51,1314.35
+complaint_type,FLOORING/STAIRS,92,92,100.0,76978.41,292.56,2277.16
+complaint_type,General Construction/Plumbing,91,91,100.0,135950.52,12.29,3946.22
+complaint_type,ELECTRIC,87,87,100.0,84859.96,344.28,2881.39
+complaint_type,Lead,77,77,100.0,6656.1,90.45,94.8
+complaint_type,APPLIANCE,76,76,100.0,79590.83,444.68,2703.23
+complaint_type,For Hire Vehicle Complaint,70,70,100.0,128208.0,1871.18,2647.47
+complaint_type,Damaged Tree,68,53,77.94,28454.92,25.55,440.23
+complaint_type,Rodent,68,68,100.0,1716.07,0.0,95.57
+complaint_type,Sewer,68,65,95.59,1027.27,2.77,36.17
+complaint_type,Sidewalk Condition,68,68,100.0,8020.13,116.65,177.63
+complaint_type,Building/Use,52,52,100.0,125016.2,1544.64,7664.39
+complaint_type,Residential Disposal Complaint,52,51,98.08,2070.3,23.99,57.72
+complaint_type,Consumer Complaint,51,51,100.0,17676.19,108.12,738.05
+complaint_type,Obstruction,51,51,100.0,2428.86,22.42,128.29
+complaint_type,Elevator,50,50,100.0,48481.9,308.64,2616.51
+complaint_type,Non-Emergency Police Matter,49,49,100.0,117.72,1.39,5.6
+complaint_type,Noise - Vehicle,48,48,100.0,136.85,0.82,4.71
+complaint_type,SAFETY,46,46,100.0,36603.84,336.1,2008.96
+complaint_type,Street Sweeping Complaint,45,45,100.0,6634.1,52.74,384.7
+complaint_type,Vendor Enforcement,45,45,100.0,67.78,1.53,1.79
+complaint_type,Homeless Person Assistance,39,12,30.77,26.28,1.19,7.29
+complaint_type,Air Quality,36,36,100.0,1566.77,18.45,59.34
+complaint_type,Curb Condition,34,34,100.0,21748.34,161.49,2242.39
+complaint_type,Drug Activity,34,34,100.0,82.72,0.65,6.45
+complaint_type,Root/Sewer/Sidewalk Condition,34,30,88.24,50121.85,1359.35,1845.95
+complaint_type,Overgrown Tree/Branches,33,25,75.76,49100.22,333.0,5380.28
+complaint_type,Real Time Enforcement,33,33,100.0,6218.98,0.0,8.87
+complaint_type,Dead Animal,30,30,100.0,1457.95,29.1,118.68
+complaint_type,Maintenance or Facility,30,26,86.67,39700.61,195.43,4691.74
+complaint_type,Street Sign - Dangling,30,30,100.0,3830.35,149.19,256.55
+complaint_type,Food Establishment,27,27,100.0,26164.32,1440.04,1440.44
+complaint_type,Indoor Air Quality,23,23,100.0,157.22,3.37,14.07
+complaint_type,Animal-Abuse,22,22,100.0,154.6,2.04,10.21
+complaint_type,Mobile Food Vendor,22,16,72.73,6597.27,209.86,1221.85
+complaint_type,Taxi Complaint,22,22,100.0,45870.75,1932.78,3045.82
+complaint_type,Lost Property,20,20,100.0,186.66,3.96,21.53
+complaint_type,Smoking or Vaping,20,20,100.0,25421.06,1440.09,1440.51
+complaint_type,Dead/Dying Tree,18,14,77.78,3931.02,173.68,343.09
+complaint_type,Outdoor Dining,18,18,100.0,2301.96,115.98,186.08
+complaint_type,Panhandling,17,17,100.0,20.9,0.71,3.09
+complaint_type,Street Sign - Damaged,15,15,100.0,3095.98,121.53,509.86
+complaint_type,Animal in a Park,14,14,100.0,4149.04,2.01,98.03
+complaint_type,Litter Basket Request,13,13,100.0,1327.21,40.81,259.83
+complaint_type,Traffic,13,13,100.0,24.09,0.65,4.06
+complaint_type,Broken Parking Meter,12,12,100.0,2498.92,128.44,594.34
+complaint_type,Illegal Posting,12,12,100.0,1324.44,30.39,282.94
+complaint_type,Highway Condition,10,10,100.0,8154.12,116.04,2001.78
+complaint_type,Plumbing,10,10,100.0,5275.87,87.84,1107.31
+complaint_type,Street Sign - Missing,9,9,100.0,6294.93,35.84,2961.24
+complaint_type,Unsanitary Animal Pvt Property,9,9,100.0,110.6,0.0,32.05
+complaint_type,Water Conservation,9,9,100.0,269.13,0.93,104.79
+complaint_type,Emergency Response Team (ERT),8,8,100.0,689.31,46.55,192.0
+complaint_type,Sanitation Worker or Vehicle Complaint,8,8,100.0,1113.03,87.77,343.45
+complaint_type,Food Poisoning,7,4,57.14,840.0,156.0,456.0
+complaint_type,Illegal Tree Damage,7,7,100.0,9167.18,188.09,3404.45
+complaint_type,Boilers,6,6,100.0,1654.74,177.84,551.29
+complaint_type,Commercial Disposal Complaint,6,6,100.0,136.9,1.9,65.52
+complaint_type,Unsanitary Pigeon Condition,6,6,100.0,52.4,0.0,26.2
+complaint_type,Construction Lead Dust,5,0,0.0,0,,
+complaint_type,Electrical,5,5,100.0,651.44,149.3,186.81
+complaint_type,Industrial Waste,5,5,100.0,45.58,6.97,15.1
+complaint_type,Noise - Park,5,5,100.0,7.33,0.6,3.06
+complaint_type,Non-Residential Heat,5,5,100.0,6736.52,1440.19,1440.34
+complaint_type,Special Projects Inspection Team (SPIT),5,5,100.0,7771.44,320.73,4257.17
+complaint_type,Water Quality,5,5,100.0,734.9,130.1,236.21
+complaint_type,Bus Stop Shelter Complaint,4,4,100.0,582.69,192.67,195.98
+complaint_type,Dumpster Complaint,4,4,100.0,511.5,112.67,220.05
+complaint_type,Illegal Fireworks,4,4,100.0,9.05,2.12,3.69
+complaint_type,Investigations and Discipline (IAD),4,4,100.0,94.87,6.99,58.08
+complaint_type,Noise - House of Worship,4,4,100.0,17.65,4.43,5.13
+complaint_type,School Maintenance,4,4,100.0,4549.99,1235.17,1786.78
+complaint_type,Abandoned Bike,3,3,100.0,625.97,265.62,337.85
+complaint_type,Asbestos,3,3,100.0,1274.54,606.36,643.76
+complaint_type,Bridge Condition,3,3,100.0,451.07,147.06,160.01
+complaint_type,Mold,3,3,100.0,21.57,2.73,13.6
+complaint_type,Unleashed Dog,3,1,33.33,0.0,0.0,0.0
+complaint_type,BEST/Site Safety,2,2,100.0,22.56,11.28,12.08
+complaint_type,Drinking Water,2,2,100.0,41.4,20.7,21.42
+complaint_type,Hazardous Materials,2,2,100.0,9.08,4.54,5.96
+complaint_type,Illegal Animal Kept as Pet,2,2,100.0,0.0,0.0,0.0
+complaint_type,Lot Condition,2,0,0.0,0,,
+complaint_type,New Tree Request,2,2,100.0,7310.09,3655.04,3655.55
+complaint_type,Snow or Ice,2,2,100.0,18.76,9.38,14.06
+complaint_type,Urinating in Public,2,2,100.0,10.21,5.11,7.35
+complaint_type,Violation of Park Rules,2,2,100.0,5.61,2.8,5.02
+complaint_type,Beach/Pool/Sauna Complaint,1,1,100.0,116.98,116.98,116.98
+complaint_type,Bench,1,1,100.0,1489.91,1489.91,1489.91
+complaint_type,Bike/Roller/Skate Chronic,1,1,100.0,3.16,3.16,3.16
+complaint_type,Day Care,1,1,100.0,185.5,185.5,185.5
+complaint_type,Drinking,1,1,100.0,1.58,1.58,1.58
+complaint_type,ELEVATOR,1,1,100.0,272.56,272.56,272.56
+complaint_type,Ferry Inquiry,1,1,100.0,117.9,117.9,117.9
+complaint_type,For Hire Vehicle Report,1,0,0.0,0,,
+complaint_type,Green Taxi Report,1,0,0.0,0,,
+complaint_type,Highway Sign - Dangling,1,1,100.0,97.56,97.56,97.56
+complaint_type,Indoor Sewage,1,1,100.0,26.87,26.87,26.87
+complaint_type,LinkNYC,1,1,100.0,519.27,519.27,519.27
+complaint_type,Litter Basket Complaint,1,1,100.0,8.55,8.55,8.55
+complaint_type,Plant,1,1,100.0,1.48,1.48,1.48
+complaint_type,Radioactive Material,1,1,100.0,113.67,113.67,113.67
+complaint_type,Tattooing,1,1,100.0,198.1,198.1,198.1
+complaint_type,Tobacco or Non-Tobacco Sale,1,0,0.0,0,,
+complaint_type,Wood Pile Remaining,1,1,100.0,318.26,318.26,318.26
+agency,NYPD,7581,7581,100.0,43623.61,3.57,13.67
+agency,HPD,3186,3185,99.97,1251558.39,49.14,1255.41
+agency,DSNY,811,806,99.38,115121.87,25.97,386.77
+agency,DOT,659,644,97.72,125428.09,41.05,243.06
+agency,DEP,517,508,98.26,55454.93,21.21,141.19
+agency,DOB,266,266,100.0,331827.82,85.0,3867.98
+agency,DOHMH,210,193,91.9,69759.02,27.01,1440.22
+agency,DPR,209,174,83.25,192258.78,144.75,3655.3
+agency,EDC,129,129,100.0,430159.16,3333.48,3339.27
+agency,TLC,114,112,98.25,174265.42,1782.55,2791.17
+agency,DHS,73,46,63.01,29244.26,7.81,2634.0
+agency,DCWP,51,51,100.0,17676.19,108.12,738.05
+agency,DOE,4,4,100.0,4549.99,1235.17,1786.78
+agency,OTI,1,1,100.0,519.27,519.27,519.27
+borough,BRONX,6349,6330,99.7,571668.0,9.42,56.03
+borough,BROOKLYN,3023,2994,99.04,727515.07,14.09,597.5
+borough,QUEENS,2164,2139,98.84,570323.85,10.32,503.88
+borough,MANHATTAN,1968,1940,98.58,887628.6,25.93,1780.17
+borough,STATEN ISLAND,303,294,97.03,83366.3,12.93,284.69
+borough,Unspecified,4,3,75.0,944.98,200.59,541.32
